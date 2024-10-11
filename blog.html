@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blog - Happy Health</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Roboto';
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+            font-family: 'Tahoma';
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+            padding: 10px;
+        }
+        .menu a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0257b3;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .menu a:hover::after {
+            opacity: 1;
+        }
+        .menu a:hover {
+            color: white; /* Mengubah warna teks menjadi putih saat di-hover */
+        }
+        .button-container {
+            margin-right: 15px;
+        }
+        .get-started-btn {
+            background-color: #0257b3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Tahoma';
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .containerr {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color:black;
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-family: 'Tahoma';
+            font-weight: normal;
+        }
+
+        .blog-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .blog-card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .blog-title {
+            font-size: 24px;
+            color: #333;
+            margin: 20px 0 10px;
+        }
+
+        .blog-excerpt {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #0257b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .read-more:hover {
+            background-color: #014085;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-card {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-card {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="src/happy health.png" width="12%" height="12%" alt="Happy Health Logo">
+        <div class="menu">
+            <a href="Untitled-1.html">Home</a>
+            <a href="Consultations.html">Consultations</a>
+            <a href="planning.html">Planning</a>
+            <a href="https://wa.me/qr/GBYJ3PTOIAMCB1">Contact Us</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="button-container">
+            <a href="#get-started" class="get-started-btn">Sign Up</a>
+        </div>
+    </div>
+    
+    <div class="containerr">
+        <h1>Anything About Mental Health <br>and Physical Health</br></h1>
+        
+        <div class="blog-grid">
+            <!-- Blog 1: Kesehatan Mental -->
+            <div class="blog-card">
+                <img src="src/mental health.jpg" alt="Kesehatan Mental">
+                <h2 class="blog-title">Kesehatan Mental</h2>
+                <p class="blog-excerpt">Pentingnya menjaga kesehatan mental di era modern ini. Cari tahu cara mengelola stres, kecemasan, dan depresi dengan langkah-langkah yang tepat.</p>
+                <a href="mental-health.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Blog 2: Bahaya Obesitas -->
+            <div class="blog-card">
+                <img src="src/obesitas.jpg" alt="Bahaya Obesitas">
+                <h2 class="blog-title">Bahaya Obesitas</h2>
+                <p class="blog-excerpt">Obesitas bisa memicu berbagai penyakit berbahaya seperti diabetes, tekanan darah tinggi, dan masalah jantung. Pelajari lebih lanjut tentang dampaknya.</p>
+                <a href="obesity-danger.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Blog 3: Bahaya Diabetes -->
+            <div class="blog-card">
+                <img src="src/Diabetes (1).jpg" alt="Bahaya Diabetes">
+                <h2 class="blog-title">Bahaya Diabetes</h2>
+                <p class="blog-excerpt">Diabetes adalah penyakit yang berpotensi mematikan jika tidak ditangani dengan benar. Ketahui gejala dan pencegahan dini untuk hidup lebih sehat.</p>
+                <a href="diabetes-danger.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

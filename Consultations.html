@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Health</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Roboto';
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+            font-family: 'Tahoma';
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+            padding: 10px;
+        }
+        .menu a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0257b3;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .menu a:hover::after {
+            opacity: 1;
+        }
+        .menu a:hover {
+            color: white; /* Mengubah warna teks menjadi putih saat di-hover */
+        }
+        .button-container {
+            margin-right: 15px;
+        }
+        .get-started-btn {
+            background-color: #0257b3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Tahoma';
+        }
+        /* Styling for the new text section */
+        .consultation-section {
+            text-align: center;
+            margin: 40px 0;
+            font-family: 'Tahoma';
+        }
+        .consultation-section h1 {
+            font-size: 36px;
+            color: black;
+            font-weight: normal;
+        }
+        .consultation-section p {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Flexbox container for Recommendation and doctor cards */
+        .recommendation-section {
+            text-align: center;
+            margin: 50px 0;
+            font-family: 'Tahoma';
+            font-weight: 300;
+        }
+
+        .recommendation-section h2 {
+            font-size: 30px;
+            color: #0257b3;
+            margin-bottom: 30px;
+            font-weight:bold;
+        }
+
+        /* Container for doctor cards in flexbox */
+        .doctor-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap; /* Allow wrapping to next line on smaller screens */
+        }
+
+        /* Styling doctor cards */
+        .doctor-card {
+            width: 200px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Tahoma';
+        }
+        .doctor-card img {
+            width: 100%;
+            border-radius: 5%;
+        }
+        .doctor-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .doctor-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .chat-btn {
+            background-color: #0257b3;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Tahoma';
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="src/happy health.png" width="12%" height="12%" alt="Happy Health Logo">
+        <div class="menu">
+            <a href="Untitled-1.html">Home</a>
+            <a href="Consultations.html">Consultations</a>
+            <a href="planning.html">Planning</a>
+            <a href="https://wa.me/qr/GBYJ3PTOIAMCB1">Contact Us</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="button-container">
+            <a href="#get-started" class="get-started-btn">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- New section for consultation text -->
+    <div class="consultation-section">
+        <h1>Consult your Physics and Mental Issues <br> at Happy Health</br></h1>
+        <p>Let's get the best consultations with our professional doctor or specialist in recommendation feature.</p>
+    </div>
+
+    <!-- Recommendation and Doctor Cards Section -->
+    <div class="recommendation-section">
+        <!-- Recommendation Header -->
+        <h2>Recommendation</h2>
+
+        <!-- Doctor Cards Container -->
+        <div class="doctor-cards">
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card">
+                <img src="src/Dokter 1.jpg" alt="Doctor 1">
+                <h3>Dr. John Smith</h3>
+                <p>Cardiologist Specialist</p>
+                <a href="https://wa.me/qr/GBYJ3PTOIAMCB1" class="chat-btn">Chat</a>
+            </div>
+
+            <!-- Doctor Card 2 -->
+            <div class="doctor-card">
+                <img src="src/Dokter 2.jpg" alt="Doctor 2">
+                <h3>Dr. Sarah Lee</h3>
+                <p>Psychiatrist</p>
+                <a href="https://wa.me/qr/GBYJ3PTOIAMCB1" class="chat-btn">Chat</a>
+            </div>
+
+            <!-- Doctor Card 3 -->
+            <div class="doctor-card">
+                <img src="src/Dokter 3.jpg" alt="Doctor 3">
+                <h3>Dr. David Brown</h3>
+                <p>Nutritionist</p>
+                <a href="https://wa.me/qr/GBYJ3PTOIAMCB1" class="chat-btn">Chat</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

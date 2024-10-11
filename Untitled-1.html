@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Health</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Roboto';
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+            font-family: 'Tahoma';
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+            padding: 10px;
+        }
+        .menu a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0257b3;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .menu a:hover::after {
+            opacity: 1;
+        }
+        .menu a:hover {
+            color: white; /* Mengubah warna teks menjadi putih saat di-hover */
+        }
+        .header-frame {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e1f0ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .text-container {
+            width: 35%;
+            text-align: left;
+        }
+        .text-container h1 {
+            font-size: 40px;
+            line-height: 150%;
+            font-family:'Tahoma';
+            margin: 0;
+            text-align: left;
+            font-weight: bold;
+        }
+        .text-container p {
+            font-size: 14px;
+            color: #555;
+            font-family: 'Tahoma';
+            text-align: justify;
+        }
+        .buttons-container {
+            margin-top: 40px;
+        }
+        .buttons-container a {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 20px;
+            display: inline-block; 
+        }
+        .button-get-started {
+            background-color: #0257b3; /* Box for Get Started */
+            color: white;
+            border: none; 
+            font-family: 'Tahoma';
+        }
+        .button-learn-more {
+            color: #0257b3; /* Text color for Learn More */
+            background-color: transparent; /* No background for Learn More */
+            border: 2px solid #0257b3;
+            font-family: 'Tahoma';
+        }
+        .image-container {
+            width: 50%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .button-container {
+            margin-right: 15px;
+        }
+        .get-started-btn {
+            background-color: #0257b3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Tahoma';
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="src/happy health.png" width="12%" height="12%" alt="Happy Health Logo">
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="Consultations.html">Consultations</a>
+            <a href="planning.html">Planning</a>
+            <a href="https://wa.me/qr/GBYJ3PTOIAMCB1">Contact Us</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="button-container">
+            <a href="getstarted.html" class="get-started-btn">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="header-frame">
+        <div class="text-container">
+            <h1>Your Path <br> to Healthier Life<br> Starts Here</h1>
+            <p>
+                From nutritious recipes to professional health care and mental care advice, we provide all the resources you need to achieve your wellness goals. Whether you're looking to boost your physical fitness, elevate your mental well-being, or simply lead a more balanced lifestyle, we've got you covered.
+            </p>
+            <div class="buttons-container">
+                <a href="getstarted.html" class="button-get-started">Get Started</a>
+                <a href="#learn-more" class="button-learn-more">Learn More</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="src/low-angle-man-exercising-outdoors.jpg" alt="Healthy Living">
+        </div>
+    </div>
+</body>
+</html>
